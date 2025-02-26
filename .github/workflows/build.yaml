@@ -18,6 +18,7 @@ jobs:
       - name: Build front
         run: |
           npm install
+          npm audit fix --force
           npm run build
 
       - name: Configure AWS credentials
